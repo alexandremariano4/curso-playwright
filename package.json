@@ -1,12 +1,21 @@
 {
-  "name": "curso-playwright",
+  "name": "curso-playwright-qax",
   "version": "1.0.0",
+  "description": "---",
   "main": "index.js",
-  "repository": "https://github.com/alexandremariano4/curso-playwright.git",
-  "author": "Alexandre Mariano <alexandre_mariano@hotmail.com.br>",
-  "license": "MIT",
-  "devDependencies": {
-    "@playwright/test": "^1.36.2"
+  "scripts": {
+    "pw:run": "npx playwright test",
+    "pw:run:headed": "npx playwright test --headed",
+    "pw:debug": "npx playwright test --debug",
+    "pw:report": "npx playwright test --reporter=line,html",
+    "pw:show:report": "npx playwright show-report"
   },
-  "scripts": {}
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.54.1",
+    "@types/node": "^24.1.0",
+    "dotenv": "^17.2.1"
+  }
 }
